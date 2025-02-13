@@ -41,7 +41,7 @@
         <p>{{html-safe @category.description_excerpt}}</p>
       </div>
 
-      {{#if @category.isGrandParent}}
+      {{#if @category.subcategories}}
         {{#each @category.subcategories as |subcategory|}}
           <a
             href={{subcategory.url}}
